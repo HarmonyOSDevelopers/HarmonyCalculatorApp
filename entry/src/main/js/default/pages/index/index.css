@@ -1,0 +1,81 @@
+.container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.display_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #000;
+}
+
+.display_screen text {
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.keyboard_button {
+    justify-content: center;
+}
+
+.keyboard_button_title {
+    width: 100%;
+    height: 100%;
+    margin: 4px;
+    border-radius: 1000px;
+    justify-content: center;
+    background-color: green;
+}
+
+.keyboard_button_title text {
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("../../common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}

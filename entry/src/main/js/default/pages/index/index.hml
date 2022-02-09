@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="display_screen" style="flex: 1;">
+        <div>
+            <text>
+                1+1
+            </text>
+        </div>
+    </div>
+    <div class="keyboard" >
+        <div class="keyboard_row" for="{{rows in buttons}}">
+            <div class="keyboard_button" for="{{item in rows}}" style="height: {{itemHeight}}px;width: {{item == '0' ? '50%' : itemHeight}};">
+                <div class="keyboard_button_title" style="background-color: orange;">
+                    <text>
+                        <span>{{item}}</span>
+                    </text>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
